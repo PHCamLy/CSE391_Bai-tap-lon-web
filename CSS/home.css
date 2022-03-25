@@ -1,39 +1,4 @@
-/*=====================================================================
 
-Table of Content:
-01/ Variables
-02/ Global
-03/ Header
-04/ Booking 
-05/ Tile Gallery
-06/ Counter Boxes
-07/ Room 
-08/ Service
-09/ Call TO Action
-10/ Gallery
-11/ Feature
-12/ Feedback
-13/ Contact
-14/ Product
-15/ Latest Post
-16/ BreadCrumb
-17/ Staff
-18/ Resturent
-19/ Reservation
-20/ Blog
-21/ Blog and Room Details
-22/ About page
-23/ Sidebar
-24/ Footer
-
-=====================================================================*/
-/* Start Global css
-============================================================================================ */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700&amp;display=swap");
-* {
-	margin: 0;
-	padding: 0;
-}
 
 body {
 	line-height: 28px;
@@ -136,7 +101,7 @@ p {
 	margin-bottom: 55px;
 }
 
-.btn:focus,
+ .btn:focus,
 input:focus,
 select,
 .nice-select:focus,
@@ -358,7 +323,7 @@ ul.list-inline li {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: #0f172b;
+	/* background: #0f172b; */
 }
 
 .loader > span {
@@ -379,225 +344,11 @@ ul.list-inline li {
 	animation-delay: 0.4s;
 }
 
-/* Animation keyfranes */
-@-webkit-keyframes bouncingLoader {
-	from {
-		width: 0.1rem;
-		height: 0.1rem;
-		opacity: 1;
-		-webkit-transform: translate3d(0);
-		transform: translate3d(0);
-	}
-	to {
-		width: 1rem;
-		height: 1rem;
-		opacity: 0.1;
-		-webkit-transform: translate3d(0, -1rem, 0);
-		transform: translate3d(0, -1rem, 0);
-	}
-}
-@keyframes bouncingLoader {
-	from {
-		width: 0.1rem;
-		height: 0.1rem;
-		opacity: 1;
-		-webkit-transform: translate3d(0);
-		transform: translate3d(0);
-	}
-	to {
-		width: 1rem;
-		height: 1rem;
-		opacity: 0.1;
-		-webkit-transform: translate3d(0, -1rem, 0);
-		transform: translate3d(0, -1rem, 0);
-	}
-}
-
-@-webkit-keyframes twirlAnimation {
-	0% {
-		-webkit-transform: translate(0, 0) rotate(0deg);
-		transform: translate(0, 0) rotate(0deg);
-	}
-	20% {
-		-webkit-transform: translate(16px, -1px) rotate(36deg);
-		transform: translate(16px, -1px) rotate(36deg);
-	}
-	40% {
-		-webkit-transform: translate(40px, 15px) rotate(72deg);
-		transform: translate(40px, 15px) rotate(72deg);
-	}
-	60% {
-		-webkit-transform: translate(40px, 30px) rotate(108deg);
-		transform: translate(40px, 30px) rotate(108deg);
-	}
-	80% {
-		-webkit-transform: translate(-30px, 15px) rotate(144deg);
-		transform: translate(-30px, 15px) rotate(144deg);
-	}
-	100% {
-		-webkit-transform: translate(0, 0) rotate(0deg);
-		transform: translate(0, 0) rotate(0deg);
-	}
-}
-
-@keyframes twirlAnimation {
-	0% {
-		-webkit-transform: translate(0, 0) rotate(0deg);
-		transform: translate(0, 0) rotate(0deg);
-	}
-	20% {
-		-webkit-transform: translate(16px, -1px) rotate(36deg);
-		transform: translate(16px, -1px) rotate(36deg);
-	}
-	40% {
-		-webkit-transform: translate(40px, 15px) rotate(72deg);
-		transform: translate(40px, 15px) rotate(72deg);
-	}
-	60% {
-		-webkit-transform: translate(40px, 30px) rotate(108deg);
-		transform: translate(40px, 30px) rotate(108deg);
-	}
-	80% {
-		-webkit-transform: translate(-30px, 15px) rotate(144deg);
-		transform: translate(-30px, 15px) rotate(144deg);
-	}
-	100% {
-		-webkit-transform: translate(0, 0) rotate(0deg);
-		transform: translate(0, 0) rotate(0deg);
-	}
-}
-
-@-webkit-keyframes rotated {
-	0% {
-		-webkit-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes rotated {
-	0% {
-		-webkit-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@-webkit-keyframes rotatey {
-	0% {
-		-webkit-transform: rotateY(-360deg) rotateX(-90deg);
-		transform: rotateY(-360deg) rotateX(-90deg);
-	}
-	100% {
-		-webkit-transform: rotateY(360deg) rotateX(90deg);
-		transform: rotateY(360deg) rotateX(90deg);
-	}
-}
-
-@keyframes rotatey {
-	0% {
-		-webkit-transform: rotateY(-360deg) rotateX(-90deg);
-		transform: rotateY(-360deg) rotateX(-90deg);
-	}
-	100% {
-		-webkit-transform: rotateY(360deg) rotateX(90deg);
-		transform: rotateY(360deg) rotateX(90deg);
-	}
-}
-
-@-webkit-keyframes ripple-white {
-	0% {
-		opacity: 0;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	40% {
-		opacity: 1;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	100% {
-		opacity: 0;
-		-webkit-transform: scale(1.4);
-		transform: scale(1.4);
-	}
-}
-
-@keyframes ripple-white {
-	0% {
-		opacity: 0;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	40% {
-		opacity: 1;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-	}
-	100% {
-		opacity: 0;
-		-webkit-transform: scale(1.4);
-		transform: scale(1.4);
-	}
-}
-
-@-webkit-keyframes scale-up-three {
-	0% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	40% {
-		-webkit-transform: scale(0.4);
-		transform: scale(0.4);
-	}
-	100% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-}
-
-@keyframes scale-up-three {
-	0% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-	40% {
-		-webkit-transform: scale(0.4);
-		transform: scale(0.4);
-	}
-	100% {
-		-webkit-transform: scale(1);
-		transform: scale(1);
-	}
-}
-
-@-webkit-keyframes sticky {
-	0% {
-		top: -200px;
-	}
-	100% {
-		top: 0;
-	}
-}
-
-@keyframes sticky {
-	0% {
-		top: -200px;
-	}
-	100% {
-		top: 0;
-	}
-}
 
 /* End Global Css
 ============================================================================================ */
 /*============== Header Start =============== */
+
 .header-top-area {
 	padding: 20px 0;
 }
@@ -782,12 +533,7 @@ ul.list-inline li {
 	color: #fff;
 }
 
-@media (min-width: 1400px) and (max-width: 1700px) {
-	.menu-right-area .btn {
-		padding-right: 30px;
-		padding-left: 30px;
-	}
-}
+
 
 .menu-right-area .search-wrap {
 	position: relative;
@@ -887,11 +633,11 @@ ul.list-inline li {
 	top: 5px;
 }
 
-.header-two .menu-right-area a,
+/* .header-two .menu-right-area a,
 .header-two .menu-right-area,
 .header-two .menu-right-area .main-menu li.have-submenu::after {
 	color: #0f172b;
-}
+} */
 
 .header-two .menu-right-area .main-menu li.have-submenu::after,
 .header-two .menu-right-area .main-menu li a {
@@ -921,7 +667,7 @@ ul.list-inline li {
 	z-index: 99;
 	background: #fff;
 	border-bottom: 1px solid #fea116;
-}
+} */
 
 /*============== Header End =============== */
 /* Hero Area css
@@ -1099,7 +845,7 @@ h1.big-text {
 
 .hero-section.slider-two ul.slick-dots li.slick-active button {
 	border-color: #fea116;
-}
+} 
 
 /* hero area end
 ============================================================================================ */
@@ -1266,7 +1012,7 @@ span.counter-number,
 .counter-up {
 	padding: 100px 0;
 	position: relative;
-}
+} 
 
 /* Counter CSs End
 ============================================================================================ */
@@ -1313,7 +1059,7 @@ span.counter-number,
 	color: #fff;
 }
 
-.latest-room::after {
+ .latest-room::after {
 	position: absolute;
 	background-color: #0f172b;
 	left: 0;
@@ -1322,17 +1068,17 @@ span.counter-number,
 	content: "";
 	height: 100%;
 	z-index: -1;
-}
+} 
 
-.single-room {
+ .single-room {
 	background-color: #fff;
 	color: #666565;
-}
+} 
 
 .single-room .room-desc {
 	padding: 50px 22px 50px 40px;
 	position: relative;
-}
+} 
 
 .single-room .room-desc h4 {
 	font-size: 24px;
@@ -1383,7 +1129,7 @@ span.counter-number,
 
 .single-room .room-desc .room-book a {
 	color: white;
-}
+} 
 
 .single-room .room-desc .room-info {
 	margin-top: 30px;
@@ -1435,7 +1181,7 @@ span.counter-number,
 .single-room:hover .room-thumb img {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-}
+} 
 
 .rooms-warp .single-room {
 	margin-bottom: 30px;
@@ -1466,7 +1212,7 @@ span.counter-number,
 .room-arrows span.slick-arrow:hover {
 	background-color: #fea116;
 	border-color: transparent;
-}
+} */
 
 .latest-room-slider .slick-dots {
 	display: none;
@@ -3143,7 +2889,7 @@ a.read-more:hover {
 	background: #fea116;
 	height: 3px;
 	width: 100px;
-}
+} */
 
 /* End contact section
 ============================================================================================ */
@@ -4546,7 +4292,7 @@ a.read-more:hover {
 
 .blog-wrapper.blog-gird-view .single-blog-wrap .post-desc .read-more {
 	margin-top: 0;
-}
+} */
 
 /* Blog Css End
 ============================================================================================ */
