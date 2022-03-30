@@ -123,9 +123,16 @@ header {
 	color: #fff; }
 .header__info i {
 	color: #1490ac;
-	font-size: 16px; }
+	font-size: 16px;
+	text-decoration: none;
+}
 .header__info:first-child {
-	margin-right: 50px; }
+	margin-right: 50px;
+	text-decoration: none;
+}
+.header__info,.header__language{
+	text-decoration: none;
+}
 .header__right {
 	text-align: right; }
 .header__right a {
@@ -139,12 +146,15 @@ header {
 	align-items: center;
 	height: 80px; }
 .header__logo {
-	width: 7%; }
+	width: 16%; 
+}
 .header__menu {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	height: 100%; }
+	height: 100%;
+	text-decoration: none;
+}
 
 .fixed .header__box {
 	height: 82px;
@@ -154,16 +164,19 @@ header {
 	transition: all 0.3s ease; }
 
 .nav-menu {
-	height: 100%; }
+	height: 100%; 
+}
 .nav__list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%; }
+	height: 100%;
+ }
 .nav__item {
 	height: 100%;
-	position: relative; }
+	position: relative; 
+}
 .nav__item:hover .nav__link {
 	color: #1490ac; }
 .nav__item:hover .nav__child {
@@ -179,7 +192,9 @@ header {
 	color: #333;
 	font-weight: 500;
 	height: 100%;
-	position: relative; }
+	position: relative; 
+	text-decoration: none;
+}
 .nav__child {
 	position: absolute;
 	top: 100%;
@@ -190,14 +205,18 @@ header {
 	visibility: hidden;
 	opacity: 0;
 	transform: translateY(20px);
-	transition: all 0.3s ease; }
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
 .nav__child li:hover a {
 	background-color: #298296;
 	color: #fff; }
 .nav__child a {
 	display: block;
 	padding: 8px 20px;
-	color: #333; }
+	color: #333; 
+	text-decoration: none;
+}
 
 .menu-more {
 	height: 100%; }
@@ -822,6 +841,9 @@ color: #fff;
 	margin-bottom: 20px; }
 .post__more .view-more:hover {
 	background-color: #14404a; }
+.box.container.news {
+	display: flex;
+}
 
 .new-list .owl-nav button[class*="owl-"] {
 	top: 40%; }
@@ -899,16 +921,22 @@ color: #fff;
 	color: #fff;
 	font-weight: 500;
 	margin-bottom: 20px;
-	display: block; }
+	display: block;
+	text-decoration: none;
+}
 .footer__list li {
-	margin-bottom: 5px; }
+	margin-bottom: 5px;
+	text-decoration: none;
+}
 .footer__list li i {
 	margin-right: 10px;
 	color: #1490ac; }
 .footer__list a {
 	color: #fff;
 	text-transform: capitalize;
-	font-size: 14px; }
+	font-size: 14px;
+	text-decoration: none;
+}
 .footer__detail {
 	margin-bottom: 70px; }
 .footer__form .form-group {
